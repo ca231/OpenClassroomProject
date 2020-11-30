@@ -11,16 +11,6 @@ public class ChargementMap {
 
 	static TreeMap<String, String> tabSymptoms = new TreeMap<String, String>();
 	/**
-	 * <b> Programme de  chargement de la map qui permet de calculer le nombre de fois où un même symptome a été rencontré</b>
-	 * <p> Ce programme s'appuie sur une TreeMap afin d'avoir une liste triée des symptomes.</p>
-	 * A chaque lecture d'un symptome, on procède comme suit :
-	 * <ul>
-	 * <li>On vérifie si le symptome est déjà présent dans la map</li>S
-	 * <li>Si ce n'est pas le cas, on l'ajoute avec un  nombre d'occurence à zéro</li>
-	 * <li>Dans tous les cas, on incrémente le nombre d'occurences à +1 </li>
-	 * <li>On passe à l'occurence suivante
-	 * </ul>
-	 * 
 	 * @param inputEnrs : Liste reprenant tous les enregistrements du fichier symptoms.txt lus
 	 * 
 	 *@version 1.1
@@ -29,6 +19,19 @@ public class ChargementMap {
 		this.inputEnrs = inputEnrs;
 		this.tabSymptoms = tabSymptoms;
 	}
+	/**
+	 * <b> Programme de  chargement de la map qui permet de calculer le nombre de fois où un même symptome a été rencontré</b>
+	 * <p> Ce programme s'appuie sur une TreeMap afin d'avoir une liste triée des symptomes.</p>
+	 * <p>A chaque lecture d'un symptome, on procède comme suit : </p>
+	 * <ul>
+	 * <li>On vérifie si le symptome est déjà présent dans la map</li>
+	 * <li>Si ce n'est pas le cas, on l'ajoute avec un  nombre d'occurence à zéro</li>
+	 * <li>Dans tous les cas, on incrémente le nombre d'occurences à +1 </li>
+	 * <li>On passe à l'occurence suivante
+	 * </ul>
+	 * @return Liste des symptomes avec leur occurrence formatté sous le format : [nom Symptome]=[nombre occurences du symptome]
+	 * 
+	 */
 
 	public List<String> GetMap() {
 
